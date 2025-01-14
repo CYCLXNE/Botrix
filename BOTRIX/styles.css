@@ -1,0 +1,301 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: linear-gradient(45deg, #000000, #201f21, #635b71, #ffffff);
+    background-attachment: fixed;
+    background-size: 500%;
+    animation: backgroundAnimation 4s infinite ease;
+    color: white;
+    overflow-x: hidden;
+}
+
+@keyframes backgroundAnimation {
+    0% {
+        background-position: 0% 50%
+    }
+    50%{
+        background-position: 100% 50%;
+    }
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #00000084;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    width: 60%;
+}
+
+@media (max-width: 768px) {
+    .navbar {
+        width: 90%;
+    }
+}
+
+.navbar .logo img {
+    height: 50px;
+    width: auto;
+    display: block;
+}
+
+.navbar .nav-links {
+    list-style: none;
+    display: flex;
+    gap: 15px;
+}
+
+.navbar .nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar .nav-links li a:hover {
+    color: cyan;
+}
+
+.robot-setion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100%;
+    background-color: #000000;
+}
+
+
+.robot {
+    height: 100vh;
+    border: none;
+    border-radius: 10px;
+    margin-top: 0px;
+}
+
+.about {
+    background-color: #000000;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 70px 30px;
+    text-align: center;
+    justify-content: space-between;
+    gap: 10px;
+}
+
+.why-nextbot {
+    text-decoration: underline;
+    color: #00FFFF;
+}
+
+.about-details {
+    color: #A9A9A9;
+}
+
+.seamless-integration {
+    text-decoration: underline;
+    color: #00FFFF;
+}
+
+.proven-results {
+    text-decoration: underline;
+    color: #00FFFF;
+}
+
+.key-features {
+    text-decoration: underline;
+    color: #00FFFF;
+}
+
+.testimonial-container {
+    text-align: center; /* Centers content horizontally */
+    padding: 40px 20px; /* Adds padding around the container */
+    background: radial-gradient(circle, #201f21, #000000);
+    margin: 20px 0;
+    box-shadow: 0 4px 8px rgba(39, 31, 31, 0.5);
+    border-radius: 10px;
+  }
+  
+  .caption {
+    margin-bottom: 20px; /* Adds space below the caption to separate it from the images */
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: white; /* Adjust to your design */
+  }
+  
+  .testimonials {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    justify-content: center; /* Centers the testimonials horizontally */
+    gap: 20px; /* Adds space between testimonials */
+  }
+  
+  .testimonial {
+    text-align: center; /* Centers the content inside each testimonial */
+    color: white; /* Adjust text color if needed */
+    border: 2px solid #514e4e90;
+    border-radius: 10px;
+    padding: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+  }
+  
+  .testimonial p {
+    color: #A9A9A9;
+  }
+  .img {
+    width: 100px; /* Adjust size as necessary */
+    border-radius: 50%;
+    margin-bottom: 10px; /* Adds space between the image and text */
+  }
+
+  .more-reviews {
+    margin-top: 20px;
+    text-align: center;
+    font-size: 1rem;
+    color: #ffffff; /* Adjust color as needed */
+  }
+
+  @media (max-width: 768px) {
+    .testimonials{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+    }
+
+    .testimonial h1{
+        font-size: 18px;
+        font-weight: bolder;
+        text-decoration: underline;
+        margin-bottom: 2px;
+    }
+  }
+
+.contact {
+    background-color: black;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 60vh;
+}
+
+.contact-form {
+    background: radial-gradient(circle, #5a585d, #000000);
+    padding: 20px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(255, 17, 17, 0.1);
+    width: 100%;
+    max-width: 800px;
+    border: 2px solid rgba(0, 255, 255, 0.432);
+  }
+
+  @media (max-width:728px) {
+    .contact-form {
+        width: 350px;
+    }
+  }
+
+  .contact-form h2 {
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    color: cyan;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+  }
+
+  .contact-form label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid cyan;
+    border-radius: 5px;
+    font-size: 1rem;
+    background-color: #ffffff00;
+    color: #fff;
+  }
+
+  .contact-form textarea {
+    resize: none;
+    height: 100px;
+  }
+
+  .contact-form button {
+    width: auto; /* Change from full width to auto */
+  padding: 10px 20px; /* Adjust padding for a better look */
+  background-color: rgb(25, 181, 181);
+  color: #fff;
+  font-size: 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  display: block; /* Ensure the button behaves like a block element */
+  margin: 0 auto;
+  }
+
+  .contact-form button:hover {
+    background-color: rgb(32, 102, 102);
+  }
+
+  .footer {
+    background-color: #000000;
+    color: #ffffff;
+    padding: 10px 0;
+    text-align: center;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer .social-links {
+    margin: 3px 0;
+  }
+
+  .footer .social-links a {
+    color: #00bfff;
+    margin: 0 10px;
+    font-size: 16px;
+    text-decoration: none;
+    transition: color 0.3s ease;
+  }
+
+  .footer .social-links a:hover {
+    color: #ffffff;
+  }
+
+  .footer p {
+    margin: 3px 0;
+    font-size: 0.9rem;
+  }
+
+  @media(max-width: 728px) {
+    .footer {
+        display: flex;
+        flex-direction: column;
+    }
+  }
